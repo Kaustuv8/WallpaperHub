@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'dart:typed_data';
 import 'package:permission_handler_platform_interface/permission_handler_platform_interface.dart';
 import 'package:dio/dio.dart';
@@ -7,6 +6,8 @@ import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class ImageView extends StatefulWidget {
+  ImageView({super.key, required this.imgUrl});
+  final String imgUrl;
   @override
   State<ImageView> createState() => _ImageViewState();
 }
