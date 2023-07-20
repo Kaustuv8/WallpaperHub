@@ -33,7 +33,7 @@ Widget wallpapersList(List<WallpaperModel> wallpapers, context) {
                   context,
                   MaterialPageRoute(
                       builder: (context) =>
-                          ImageView(imgUrl: wallpaper.src.portrait)),
+                          ImageView(imgUrl: "wallpaper.src.portrait")),
                 );
               },
               child: Hero(
@@ -42,7 +42,7 @@ Widget wallpapersList(List<WallpaperModel> wallpapers, context) {
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(16),
                       child: Image.network(
-                        wallpaper.src.portrait,
+                        "wallpaper.src.portrait",
                         fit: BoxFit.cover,
                       )),
                 ),
